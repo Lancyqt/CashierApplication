@@ -38,5 +38,17 @@ namespace CashierApplication
             double change = discItem.getChange();
             changeBox.Text = change.ToString();
         }
+
+        private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLoginAccount form = new frmLoginAccount();
+            form.Show();
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
